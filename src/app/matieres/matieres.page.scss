@@ -1,0 +1,30 @@
+@keyframes pulse {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  .card-md {
+    border-radius: 10px;
+    box-shadow: 0 1.4px 3px 0 #eee1ec, 0 3px 1px -2px #f1aff3, 0 1px 1px 0 #ec98c9 !important;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+.fadeIn {
+  animation-name: fadeIn;
+  animation-duration: 2s;
+}
+.cadr-title{
+    height: 50px;
+    color:#324a5e;
+
+}
