@@ -4,11 +4,16 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
+    loadChildren: () => import('./login/login.module').then(m => m.LoginPageModule)
   },
+  {  path: 'home',
+  loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule) },
   { path: 'prof', loadChildren: './prof/prof.module#ProfPageModule' },
   { path: 'kartago-academy', loadChildren: './kartago-academy/kartago-academy.module#KartagoAcademyPageModule' },
-  { path: 'kartago-together', loadChildren: './kartago-together/kartago-together.module#KartagoTogetherPageModule' }
+  { path: 'kartago-together', loadChildren: './kartago-together/kartago-together.module#KartagoTogetherPageModule' },
+  { path: 'inscription', loadChildren: './inscription/inscription.module#InscriptionPageModule' },
+  { path: 'matieres', loadChildren: './matieres/matieres.module#MatieresPageModule' },
+
 ];
 @NgModule({
   imports: [
