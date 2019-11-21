@@ -1,0 +1,74 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="matieres"></ion-back-button>
+    </ion-buttons>
+    
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+
+    <ion-segment [(ngModel)]="segment">
+        <ion-segment-button value="cours">
+         Cours
+        </ion-segment-button>
+        <ion-segment-button value="examen">
+            Examen
+        </ion-segment-button>
+    </ion-segment>
+
+    <div [ngSwitch]="segment">
+      <div *ngSwitchCase="'cours'">
+        <ion-list>
+            <ion-list-header> Chapitre I  </ion-list-header>
+          <ion-item>
+            <ion-label>Cours 1 : <a href="../../assets/pdf/rapportfinal.pdf"> Cours 1 </a> </ion-label>
+          
+          </ion-item>
+          <ion-item>
+              <ion-label>Cours 2 :  Cours 2 </ion-label>
+            
+            </ion-item>
+            <ion-item>
+                <ion-label>Cours 3 : Cours 3 </ion-label>
+            
+              </ion-item>
+        </ion-list>
+        <ion-list>
+            <ion-list-header> Chapitre II  </ion-list-header>
+          <ion-item>
+            <ion-label>Cours 1 :  Cours 1 </ion-label>
+          
+          </ion-item>
+          <ion-item>
+              <ion-label>Cours 2 :  Cours 2 </ion-label>
+            
+            </ion-item>
+            <ion-item>
+                <ion-label>Cours 3 : Cours 3 </ion-label>
+            
+              </ion-item>
+        </ion-list>
+        <ion-list>
+            <ion-list-header> Chapitre III  </ion-list-header>
+          <ion-item>
+            <ion-label>Cours 1 :  Cours 1 </ion-label>
+          
+          </ion-item>
+          <ion-item>
+              <ion-label>Cours 2 :  Cours 2 </ion-label>
+            
+            </ion-item>
+            <ion-item>
+                <ion-label>Cours 3 : Cours 3 </ion-label>
+            
+              </ion-item>
+        </ion-list>
+      </div>
+      <div  *ngSwitchCase="'examen'">
+
+      </div>
+    </div>
+</ion-content>
