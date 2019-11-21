@@ -12,7 +12,9 @@ const routes: Routes = [
   { path: 'kartago-academy', loadChildren: './kartago-academy/kartago-academy.module#KartagoAcademyPageModule' },
   { path: 'kartago-together', loadChildren: './kartago-together/kartago-together.module#KartagoTogetherPageModule' },
   { path: 'inscription', loadChildren: './inscription/inscription.module#InscriptionPageModule' },
-  { path: 'matieres', loadChildren: './matieres/matieres.module#MatieresPageModule' },
+  { path: 'matieres', loadChildren: './matieres/matieres.module#MatieresPageModule' },  { path: 'inscription-parent', loadChildren: './inscription-parent/inscription-parent.module#InscriptionParentPageModule' },
+  { path: 'login-parent', loadChildren: './login-parent/login-parent.module#LoginParentPageModule' },
+
 
 ];
 @NgModule({

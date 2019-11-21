@@ -1,26 +1,38 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>matieres</ion-title>
+    <ion-buttons slot="start">
+    <ion-back-button defaultHref="home/tab1">
+      
+    </ion-back-button>
+  </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <ion-grid>
     <ion-row>
-        <ion-col col-6 col-lg-4>
+        <ion-col col-4 col-lg-4>
           <ion-card class="fadeIn" text-center  >
               <img src="../../assets/icon/code.png" >
-              <ion-card-subtitle style="float:right;">0%</ion-card-subtitle>
+              <ion-card-subtitle style="float:right;"></ion-card-subtitle>
               <ion-card-title style="text-align: center" class="cadr-title">Programmation</ion-card-title>
           </ion-card>
         </ion-col>
-        <ion-col col-6 col-lg-4>
+        <ion-col col-4 col-lg-4>
           <ion-card class="fadeIn" (click)="goGallerie()">
               <img src="../../assets/icon/database.png" >
               <ion-card-title style="text-align: center" class="cadr-title">Base de données</ion-card-title>
           </ion-card>
         </ion-col>
-      
+        
+       
+        <ion-col col-4 col-lg-4>
+            <ion-card class="fadeIn" (click)="goGallerie()">
+                <img src="../../assets/icon/math.jpg" >
+                <ion-card-title style="text-align: center" class="cadr-title">Mathematique</ion-card-title>
+            </ion-card>
+          </ion-col>
 
       </ion-row>
     </ion-grid>

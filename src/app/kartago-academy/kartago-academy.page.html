@@ -1,7 +1,8 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>   <ion-icon name="backspace"href="/tab1"></ion-icon>
-      Kartago_Academy</ion-title>
+    <ion-title>   
+      <ion-icon name="backspace"href="/tab1"></ion-icon>
+      Accueil</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -21,17 +22,14 @@
       <ion-list-header>
         <ion-label>Vous êtes : </ion-label>
       </ion-list-header >
-      <ion-item href="">
-        <ion-label>coach</ion-label>
-      </ion-item>
+      
+      <button  ion-button (click)="coach()" class="btn-coach">Coach</button>
 
-      <ion-item href="">
-        <ion-label>élève</ion-label>
-      </ion-item>
+      <button  ion-button (click)="eleve()" class="btn-login">éleve</button>
+      <button  ion-button (click)="parent()" class="btn-parent">Parent</button>
 
-      <ion-item href="">
-        <ion-label>Parents</ion-label>
-      </ion-item>
+
+     
       
       
     </ion-list>
