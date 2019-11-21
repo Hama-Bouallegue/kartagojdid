@@ -1,0 +1,47 @@
+ion-content{
+    background-size: cover;
+    text-align: center;
+}
+ion-content.background{
+   --background: url("../../assets/img/background-login.jpg")0 0/100% 100% no-repeat;
+    
+}
+.form{
+    margin-top: 50%;
+}
+input[type=email], input[type=password], input[type=text]{
+    background-color: #f6f6f6;
+    border: none;
+    color: #535353;
+    padding: 15px 32px ;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 5px;
+    width:  85%;
+    border: 2px solid #f6f6ff;
+    transition: all 0.5 ease-in-out;
+    height: 35px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom:10px ;
+}
+
+.btn-inscrit{
+    margin-top: 30px;
+    text-align: center;
+    border:none;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 13px;
+    transition: all 0.3s ease-in-out;
+    width: 85%;
+    height: 35px;
+    color: #ffffff;
+    background-color: #d33939;
+    //#64a4ae
+}
+.login{
+    margin-top: 50px;
+    color: #24AFBF;
+}
