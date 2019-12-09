@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-matieres',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MatieresPage implements OnInit {
 
-  constructor() { }
+  constructor(public navCtrl : NavController) { }
 
   ngOnInit() {
   }
-
+goCours(){
+  this.navCtrl.navigateRoot('/cours')
+}
 }

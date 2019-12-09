@@ -9,7 +9,7 @@ const routes: Routes = [
   },
   {  path: 'home',
   loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule) },
-  { path: 'prof', loadChildren: './prof/prof.module#ProfPageModule' },
+ 
   { path: 'kartago-academy', loadChildren: './kartago-academy/kartago-academy.module#KartagoAcademyPageModule' },
   { path: 'kartago-together', loadChildren: './kartago-together/kartago-together.module#KartagoTogetherPageModule' },
   { path: 'inscription', loadChildren: './inscription/inscription.module#InscriptionPageModule' },

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NavController } from '@ionic/angular';
+import { LoginService } from './loginService/login.service'
+import { FormsModule } from '@angular/forms'
 
 @Component({
   selector: 'app-login',
@@ -7,15 +9,13 @@ import { NavController } from '@ionic/angular';
   styleUrls: ['./login.page.scss'],
 })
 export class LoginPage implements OnInit {
-
-  constructor(public navCtrl : NavController ) { }
+  model : any={}
+  constructor(public navCtrl : NavController ,private LoginService:LoginService) { }
 
   ngOnInit() {
   }
 inscription() {
 this.navCtrl.navigateRoot('/inscription')
 }
-login() {
-  this.navCtrl.navigateRoot('/home/tab1')
-}
+
 }
