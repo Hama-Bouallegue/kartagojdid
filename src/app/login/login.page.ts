@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { NavController } from '@ionic/angular';
-import { LoginService } from './loginService/login.service'
-import { FormsModule } from '@angular/forms'
 
 @Component({
   selector: 'app-login',
@@ -10,7 +8,7 @@ import { FormsModule } from '@angular/forms'
 })
 export class LoginPage implements OnInit {
   model : any={}
-  constructor(public navCtrl : NavController ,private LoginService:LoginService) { }
+  constructor(public navCtrl : NavController) { }
 
   ngOnInit() {
   }

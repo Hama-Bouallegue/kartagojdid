@@ -12,7 +12,11 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class InscriptionPage implements OnInit {
   registerForm: FormGroup;
-
+  nom ;
+  prenom;
+  Adresse;
+  password ;
+  niveau;
     loading = false;
     submitted = false;
     model: any={}
@@ -35,7 +39,7 @@ login() {
 
 inscrit() {
  
-  this.inscriptionService.posteleve()
+  this.inscriptionService.posteleve(this.nom,this.prenom,this.Adresse,this.password,this.niveau)
   
 
       .subscribe(

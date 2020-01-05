@@ -17,10 +17,10 @@ export class InscriptionService {
       
   }
  
-    posteleve() {
+  posteleve(nom,prenom,adresse,password,niveau) {
      
-      return this._http.post(this.apiUrl, { headers : this.header })
-  }
+    return this._http.post(this.apiUrl ,{"nom":nom,"prenom":prenom,"adresse":adresse,"password":password,"niveau":niveau} ,{ headers : this.header })
+}
   getNiveau (){
     return this._http.get(this.apiURl,{headers : this.header});
   }
