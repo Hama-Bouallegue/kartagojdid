@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router';
-import { InscriptionService } from './inscriptionservice/inscription.service'
 
 import { IonicModule } from '@ionic/angular';
 
@@ -22,7 +21,6 @@ const routes: Routes = [
     IonicModule,
     RouterModule.forChild(routes)
   ],
-  providers:[InscriptionService],
   declarations: [InscriptionPage]
 })
 export class InscriptionPageModule {}

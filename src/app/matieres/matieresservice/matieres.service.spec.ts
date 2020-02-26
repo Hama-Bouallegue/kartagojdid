@@ -1,12 +1,12 @@
 import { TestBed } from '@angular/core/testing';
 
-import { InscriptionService } from './inscription.service';
+import { MatieresService } from './matieres.service';
 
-describe('InscriptionService', () => {
+describe('MatieresService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
 
   it('should be created', () => {
-    const service: InscriptionService = TestBed.get(InscriptionService);
+    const service: MatieresService = TestBed.get(MatieresService);
     expect(service).toBeTruthy();
   });
 });

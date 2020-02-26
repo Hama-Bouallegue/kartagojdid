@@ -1,17 +1,18 @@
-
 <ion-content class="background">
+  <div class="form">
+  <ion-select placeholder="niveau primaire" class="select-niveau"  [(ngModel)]="niveau" (ionChange)="showselected($event)">
+        <ion-select-option *ngFor="let niveau of niveaux "  value="{{niveau.id}}">{{niveau.titre}}</ion-select-option>
   
-    <ion-select placeholder="niveau primaire" class="select-niveau"  [(ngModel)]="niveau" >
-          <ion-select-option *ngFor="let dis of di "  value="a">{{dis.titre}}</ion-select-option>
+       
+      </ion-select>
     
-         
-        </ion-select>
-      
-        <input type="text" placeholder="Nom" [(ngModel)]="nom">
-        <input type="text" placeholder="Prenom" [(ngModel)]="prenom">
-        <input type="text" placeholder="Adresse" [(ngModel)]="Adresse">
-        <input type="email" placeholder="E-mail" [(ngModel)]="email">
-        <input type="password" placeholder="Mot de passe" [(ngModel)]="password">
-        <button  ion-button class="btn-inscrit" (click)="inscrit()">enregistrer</button>
-        <p class="login" (click)="login()">  se connecter à un compte existant </p>
+      <input type="text" placeholder="Nom" [(ngModel)]="nom">
+      <input type="text" placeholder="Prenom" [(ngModel)]="prenom">
+      <input type="text" placeholder="Adresse" [(ngModel)]="adresse">
+      <input type="number" placeholder="Telephone" [(ngModel)]="tel">
+      <input type="email" placeholder="E-mail" [(ngModel)]="email">
+      <input type="password" placeholder="Mot de passe" [(ngModel)]="password">
+      <button  ion-button class="btn-inscrit" (click)="presentLoading()">enregistrer</button>
+      <p class="login" (click)="login()">  se connecter à un compte existant </p>
+    </div>
 </ion-content>

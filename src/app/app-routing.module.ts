@@ -14,7 +14,9 @@ const routes: Routes = [
   { path: 'kartago-together', loadChildren: './kartago-together/kartago-together.module#KartagoTogetherPageModule' },
   { path: 'inscription', loadChildren: './inscription/inscription.module#InscriptionPageModule' },
   { path: 'matieres', loadChildren: './matieres/matieres.module#MatieresPageModule' },
-  { path: 'cours', loadChildren: './cours/cours.module#CoursPageModule' },
+  { path: 'cours', loadChildren: './cours/cours.module#CoursPageModule' },  { path: 'inscription', loadChildren: './inscription/inscription.module#InscriptionPageModule' },
+  { path: 'inscription', loadChildren: './inscription/inscription.module#InscriptionPageModule' },
+
 
 ];
 @NgModule({
